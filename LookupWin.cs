@@ -67,6 +67,7 @@ namespace ItemLookup {
                 this.btnRecv.Enabled = true;
                 this.btnBinSmall.Enabled = true;
                 this.btnBinLarge.Enabled = true;
+                this.btnDNB.Enabled = true;
                 this.prodData = obj;
             }
         }
@@ -95,6 +96,7 @@ namespace ItemLookup {
             this.btnRecv.Enabled = false;
             this.btnBinSmall.Enabled = false;
             this.btnBinLarge.Enabled = false;
+            this.btnDNB.Enabled = false;
             this.txtName.ForeColor = Color.Black;
             Graphics.FromImage(this.prodImage).FillRectangle(Brushes.White, 0, 0, 0x4b, 0x4b);
             this.picItem.Image = this.prodImage;
@@ -161,6 +163,10 @@ namespace ItemLookup {
 
         private void btnBinSmall_Click(object sender, EventArgs e) {
             LookupController.printLabel("binsmall", this.prodData);
+        }
+
+        private void btnDnb_Click(object sender, EventArgs e) {
+            LookupController.printLabel("donotbreak", this.prodData);
         }
     }
 }

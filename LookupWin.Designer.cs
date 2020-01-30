@@ -74,6 +74,7 @@
             this.txtLookup = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnDNB = new System.Windows.Forms.Button();
             this.groupBox9.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picItem)).BeginInit();
@@ -162,6 +163,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.btnDNB);
             this.groupBox8.Controls.Add(this.btnBinLarge);
             this.groupBox8.Controls.Add(this.btnBinSmall);
             this.groupBox8.Controls.Add(this.btnReturns);
@@ -169,7 +171,7 @@
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(12, 440);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(171, 78);
+            this.groupBox8.Size = new System.Drawing.Size(171, 108);
             this.groupBox8.TabIndex = 45;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Labels";
@@ -568,11 +570,23 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Item Lookup";
             // 
+            // btnDNB
+            // 
+            this.btnDNB.Enabled = false;
+            this.btnDNB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDNB.Location = new System.Drawing.Point(35, 77);
+            this.btnDNB.Name = "btnDNB";
+            this.btnDNB.Size = new System.Drawing.Size(98, 23);
+            this.btnDNB.TabIndex = 29;
+            this.btnDNB.Text = "Do Not Break";
+            this.btnDNB.UseVisualStyleBackColor = true;
+            this.btnDNB.Click += new System.EventHandler(this.btnDnb_Click);
+            // 
             // LookupWin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 542);
+            this.ClientSize = new System.Drawing.Size(497, 559);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.txtQOH);
             this.Controls.Add(this.groupBox9);
@@ -661,6 +675,7 @@
         private System.Windows.Forms.TextBox txtLookup;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDNB;
     }
 }
 
